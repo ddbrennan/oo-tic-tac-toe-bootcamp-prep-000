@@ -75,9 +75,9 @@ class TicTacToe
     !won? && full?
   end
 
-def over?(board)
-  won?(board) || draw?(board)
-end
+  def over?
+    won? || draw?
+  end
 
 def winner(board)
   if winning_combo = won?(board)
